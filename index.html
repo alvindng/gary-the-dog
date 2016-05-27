@@ -8,24 +8,50 @@
   <body>
     <header class="header">
       <a href="#">Logo</a>
-      <nav>
+      <nav class="pull-right">
         <a href="#">Link 1</a>
         <a href="#">Link 2</a>
         <a href="#">Link 3</a>
         <a href="#">Link 4</a>
       </nav>
+    <hr>
     </header>
     <div class="intro">
       <h1 class="title">Gary Francis Geraci</h1>
       <h2 class="subtitle">Lawyer, Scientist, Astronaut</h2>
     </div>
-
-    <img src="img/dog-suit.jpg" alt="Gary The Dog" />
-    <p>Welcome to my website. I am Gary Francis Geraci, also known as <strong>Gary the Dog</strong>.</p>
-    <p>Take a look around and get to know me better.</p>
+    <img class="img-responsive"src="img/dog-home.jpg" alt="Gary The Dog" />
+    <div class="welcome">
+      <p>Welcome to my website. I am Gary Francis Geraci, also known as <strong>Gary the Dog</strong>.</p>
+      <p>Take a look around and get to know me better.</p>
+    </div>
     <a href="andy-foods.html">My Favorite Foods</a>
     <a href="andy-toys.html">My Favorite Toys</a>
+<!-- columns -->
+    <div class="row">
+      <div class="col col-sm-4">
+        <h1 class="thoughts">Thought 1</h1>
+        <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
+        <div class="row">
+          <div class="col-xs-6 col-sm-push-6">
+            <h3>Quote 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="col-xs-6 col-sm-pull-6">
+            <img class="img-responsive" src="img/dog-suit.jpeg" alt="dog suit" />
+            <p class="italics">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-sm-4 col-pull-left">
+        <h1 class="thoughts">Thought 2</h1>
+        <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="col col-sm-4">
+        <h1 class="thoughts">Thought 3</h1>
+        <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
     <!--script  -->
     <script src="js/bootstrap.min.js" charset="utf-8"></script>
   </body>
