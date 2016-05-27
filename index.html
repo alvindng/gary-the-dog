@@ -8,44 +8,80 @@
   </head>
   <body>
     <!-- navbar -->
-    <div class="navbar navbar-default navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand "href="#">Logo</a>
+        <a class="navbar-brand text-muted" href="#">Logo</a>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Link 1</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link 2</a></li>
             <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" data-target="#">Link 4<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Link 4</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
     </div>
     <!-- end navbar -->
+    <!-- carousel -->
+    <div id="mycarousel" class="carousel slide jumbotron">
+      <div class="container">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#mycarousel" data-slide-to="0"></li>
+          <li data-target="#mycarousel" data-slide-to="1"></li>
+          <li data-target="#mycarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img class="img-responsive"src="img/dog-home.jpg" alt="Gary The Dog" />
+            <p>Welcome to my website. I am Gary Francis Geraci, also known as <strong>Gary the Dog</strong>.</p>
+            <p class="lead">Take a look around and get to know me better.</p>
+            <p>
+              <a class="btn btn-primary btn-lg" href="#">Download my app</a>
+              <a class="btn btn-default btn-lg" href="#">Text me</a>
+            </p>
+          </div>
+          <div class="item">
+            <h1>Slide 2</strong>.</h1>
+            <p class="lead">Take a look around and get to know me better.</p>
+            <p>
+          </div>
+          <div class="item">
+            <h1>Slide 3</strong>.</h1>
+            <p class="lead">Take a look around and get to know me better.</p>
+            <p>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#mycarousel" data-slide="prev"> <span class="icon-prev"></span></a>
+      <a class="right carousel-control" href="#mycarousel" data-slide="next"> <span class="icon-next"></span></a>
+    </div>
+    <!-- end carousel -->
+
     <div class="container">
       <div class="intro">
         <h1 class="title">Gary Francis Geraci</h1>
         <h2 class="subtitle">Lawyer, Scientist, Astronaut</h2>
-      </div>
-      <img class="img-responsive"src="img/dog-home.jpg" alt="Gary The Dog" />
-      <div class="jumbotron">
-        <p>Welcome to my website. I am Gary Francis Geraci, also known as <strong>Gary the Dog</strong>.</p>
-        <p class="lead">Take a look around and get to know me better.</p>
-        <p>
-          <a class="btn btn-primary btn-lg" href="#">Download my app</a>
-          <a class="btn btn-default btn-lg" href="#">Text me</a>
-        </p>
       </div>
       <a href="andy-foods.html">My Favorite Foods</a>
       <a href="andy-toys.html">My Favorite Toys</a>
   <!-- columns -->
       <div class="row">
         <div class="col col-sm-4">
+          <b class="glyphicon glyphicon-camera"></b>
           <h1 class="thoughts">Thought 1</h1>
           <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -61,10 +97,12 @@
           </div>
         </div>
         <div class="col col-sm-4 col-pull-left">
+          <b class="glyphicon glyphicon-user"></b>
           <h1 class="thoughts">Thought 2</h1>
           <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div class="col col-sm-4">
+          <b class="glyphicon glyphicon-cloud"></b>
           <h1 class="thoughts">Thought 3</h1>
           <p class="test">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
