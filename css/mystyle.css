@@ -1,14 +1,20 @@
+/*layout*/
+
+body{
+  padding-top: 70px;
+  background-color: rgba(104, 151, 187, 0.5);
+}
+
+.container{
+  max-width: 1000px;
+}
 .intro {
   text-align: center;
   border-style: groove;
   border-width: thick;
   text-shadow: 5px 10px 3px gray;
 }
-
-body{
-  background-color: rgba(104, 151, 187, 0.5);
-}
-.welcome{
+.jumbotron{
   text-align: center;
 }
 .italics {

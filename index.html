@@ -2,20 +2,32 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="text/css" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" media="screen" title="text/css" charset="utf-8">
     <link rel="stylesheet" href="css/mystyle.css" media="screen" title="text/css" charset="utf-8">
     <title>Gary the Dog</title>
   </head>
   <body>
+    <!-- navbar -->
+    <div class="navbar navbar-default navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand "href="#">Logo</a>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar -->
     <div class="container">
-      <header class="page-header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-        </ul>
-        <h3>logo</h3>
-      </header>
       <div class="intro">
         <h1 class="title">Gary Francis Geraci</h1>
         <h2 class="subtitle">Lawyer, Scientist, Astronaut</h2>
@@ -58,6 +70,8 @@
       </div>
     </div>
     <!--script  -->
-    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--end script  -->
   </body>
 </html>
